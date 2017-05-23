@@ -1,0 +1,3 @@
+﻿  main.cpp
+g:\documentos\fct\5oano\2osemestre\is\meuano\trab1\trab1dll\trab1dll\main.cpp(13): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+LINK : fatal error LNK1149: output filename matches input filename 'G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\Trab1\Trab1Dll\Debug\Trab1Dll.lib'

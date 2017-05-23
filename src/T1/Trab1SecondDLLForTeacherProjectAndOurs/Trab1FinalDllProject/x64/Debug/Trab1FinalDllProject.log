@@ -1,0 +1,5 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Trab1FinalDllProject.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  serverapp_DeviceLib.cpp
+     Creating library G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1SecondDLLForTeacherProjectAndOurs\x64\Debug\Trab1SecondDLLForTeacherProjectAndOurs.lib and object G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1SecondDLLForTeacherProjectAndOurs\x64\Debug\Trab1SecondDLLForTeacherProjectAndOurs.exp
+  Trab1FinalDllProject.vcxproj -> G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1SecondDLLForTeacherProjectAndOurs\x64\Debug\Trab1SecondDLLForTeacherProjectAndOurs.dll
+  Trab1FinalDllProject.vcxproj -> G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1SecondDLLForTeacherProjectAndOurs\x64\Debug\Trab1SecondDLLForTeacherProjectAndOurs.pdb (Full PDB)

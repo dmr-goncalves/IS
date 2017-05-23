@@ -1,0 +1,9 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Trab1Dll.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+g:\documentos\fct\5oano\2osemestre\is\meuano\t_39393_40581_41038\t1_39393_40581_41038\trab1firstdll\trab1dll\main.cpp(22): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+g:\documentos\fct\5oano\2osemestre\is\meuano\t_39393_40581_41038\t1_39393_40581_41038\trab1firstdll\trab1dll\main.cpp(45): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+g:\documentos\fct\5oano\2osemestre\is\meuano\t_39393_40581_41038\t1_39393_40581_41038\trab1firstdll\trab1dll\main.cpp(59): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+g:\documentos\fct\5oano\2osemestre\is\meuano\t_39393_40581_41038\t1_39393_40581_41038\trab1firstdll\trab1dll\main.cpp(73): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+     Creating library G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1FirstDll\x64\Debug\Trab1FirstDll.lib and object G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1FirstDll\x64\Debug\Trab1FirstDll.exp
+  Trab1Dll.vcxproj -> G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1FirstDll\x64\Debug\Trab1FirstDll.dll
+  Trab1Dll.vcxproj -> G:\Documentos\FCT\5oAno\2oSemestre\IS\MeuAno\T_39393_40581_41038\T1_39393_40581_41038\Trab1FirstDll\x64\Debug\Trab1FirstDll.pdb (Full PDB)
