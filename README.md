@@ -1,2 +1,4 @@
 # IS
-Created repo and added first project and all projects documentation
+Repository of the work developed in the Systems Integration course of the FCT/UNL
+
+ 
