@@ -1,0 +1,120 @@
+
+
+<header role="banner">
+    <h1  style="font-family:'Lily Script One', cursive; text-align: center;">Sign Up</h1>
+    <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
+
+    </nav>
+</header><!-- header role="banner" -->
+
+
+
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h5>                    </h5>
+            <form class="" >
+
+                <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label">Your Name</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input ng-model="form.name" type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Your Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input ng-model="form.email" type="text" class="form-control" name="email" id="email"  placeholder="Enter your Email"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username" class="cols-sm-2 control-label">Username</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                            <input ng-model="form.username" type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="cols-sm-2 control-label">Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input ng-model="form.password" type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                            <input ng-model="form.rpassword" type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirm your Password"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group" align="center">
+                    <div class="cols-sm-10">
+                        <div>
+                            <input ng-model="role" type="radio"  value="user" /><label  class="cols-sm-2 control-label">User &nbsp;&nbsp;&nbsp;</label>
+                            <input ng-model="role" type="radio"  value="producer" /><label  class="cols-sm-2 control-label">Producer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group ">
+                    <a ng-click="register()" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a href="#">Home</a>
+            ·
+            <a href="#">Blog</a>
+            ·
+            <a href="#">Pricing</a>
+            ·
+            <a href="#">About</a>
+            ·
+            <a href="#">Faq</a>
+            ·
+            <a href="#">Contact</a>
+        </p>
+
+        <p>Company Name &copy; 2015</p>
+    </div>
+
+</footer>
+</body>
+</html>

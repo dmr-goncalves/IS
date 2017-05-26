@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/un_reg_dev_type_drawerProducer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dmrg.isapp.ProducerUnregisterDeviceType">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+
+        <include
+            android:id="@+id/producer_unRegDevType_nav_action"
+            layout="@layout/navigation_action_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/producer_unRegDevType_devName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint=" Device Type Name"
+            android:layout_below="@id/producer_unRegDevType_nav_action"
+            android:layout_marginTop="100dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/producer_unRegDevType_devId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint=" Device Type Id"
+            android:layout_below="@id/producer_unRegDevType_devName"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/producer_unRegDevType_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/producer_unRegDevType_devId"
+            android:text="Unregister"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/producer_un_reg_dev_type_nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/producer_un_reg_dev_type_menu" />
+
+</android.support.v4.widget.DrawerLayout>

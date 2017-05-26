@@ -1,0 +1,375 @@
+<header>
+    <h1 style="font-family:'Lily Script One', cursive; text-align: center;">Producer</h1>
+
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <img src="partials/UNL.png" height="50" width="50">
+                <img src="partials/fct.png" height="42" width="60">
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><p class="navbar-text">Username: {{username.username}}</p></li>
+                    <li>
+                        <a ng-click="logout_producer()"><strong>Logout</strong></a>
+                    </li>
+
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</header>
+
+<section>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <nav class="navbar navbar-default sidebar" role="navigation">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                data-target="#bs-sidebar-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li style="cursor:pointer;" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">Product Model<span
+                                        class="caret"></span><span style="font-size:16px;"
+                                                                   class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+                                <ul class="dropdown-menu forAnimate" role="menu">
+
+                                    <li style="cursor:pointer;"><a ng-click="auxiliar_fadd1()">Add</a></li>
+                                    <li class="divider"></li>
+                                    <li style="cursor:pointer;"><a ng-click="auxiliar_fremove1()">Remove</a></li>
+                                </ul>
+                            </li>
+
+                            <li style="cursor:pointer;" class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown">Product Type<span
+                                        class="caret"></span><span style="font-size:16px;"
+                                                                   class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a>
+                                <ul class="dropdown-menu forAnimate" role="menu">
+
+                                    <li style="cursor:pointer;"><a ng-click="auxiliar_fadd2()">Add</a></li>
+                                    <li class="divider"></li>
+                                    <li style="cursor:pointer;"><a ng-click="auxiliar_fremove2()">Remove</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a ng-click="auxiliar_fdev_type_hist()">Device Type History<span style="font-size:16px;"
+                                                                                                 class="pull-right hidden-xs showopacity glyphicon glyphicon-th-list"></span></a>
+                            </li>
+                            <li><a ng-click="auxiliar_fdev_hist()">Device History<span style="font-size:16px;"
+                                                                                       class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a>
+                            </li>
+                            <li><a ng-click="auxiliar_fuser_hist()">User History<span style="font-size:16px;"
+                                                                                      class="pull-right hidden-xs showopacity glyphicon glyphicon-tags"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-md-8">
+
+            <div ng-show="auxiliar_add1" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.id_product_models" type="text" class="form-control"
+                                       placeholder="Enter the ID of the product model"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Model</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.name" type="text" class="form-control"
+                                       placeholder="Enter the model of your product"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <a ng-click="add_model()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_remove1" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.id_product_models" type="text" class="form-control"
+                                       placeholder="Enter the ID of the product model"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Model</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.name" type="text" class="form-control"
+                                       placeholder="Enter the model of your product"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <a ng-click="remove_model()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_add2" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.id_device_type" type="text" class="form-control"
+                                       placeholder="Enter the ID of the product type"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Type</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.name" type="text" class="form-control"
+                                       placeholder="Enter the type of your product"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <a ng-click="add_type()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_remove2" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.id_device_type" type="text" class="form-control"
+                                       placeholder="Enter the ID of the product type"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">Type</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form.name" type="text" class="form-control"
+                                       placeholder="Enter the type of your product"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <a ng-click="remove_type()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Register</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_dev_type_hist" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form1.type" type="text" class="form-control"
+                                       placeholder="Enter the device type"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <a ng-click="devicet_history()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Check</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_dev_hist" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form2.name" type="text" class="form-control"
+                                       placeholder="Enter the name of the device"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <a ng-click="checks_history()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Check</a>
+                    </div>
+
+                </form>
+            </div>
+
+            <div ng-show="auxiliar_user_hist" class="main-login main-center">
+                <h5></h5>
+                <form class="">
+                    <div class="form-group">
+                        <label class="cols-sm-2 control-label">ID</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input ng-model="form3.username" type="text" class="form-control"
+                                       placeholder="Enter the desired username"/>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group ">
+                        <a ng-click="user_history()" target="_blank" type="button" id="button"
+                           class="btn btn-primary btn-lg btn-block login-button">Check</a>
+                    </div>
+
+                </form>
+            </div>
+
+
+            <table ng-show="table_device" class="table " style="background: #292c2f;">
+                <thead>
+                <tr>
+                    <th style="color:white" ;>#</th>
+                    <th style="color:white" ;>Reading</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="event1 in historyReadings">
+
+                    <td style="color:white" ;>{{historyReadings.indexOf(event1)}}</td>
+                    <td style="color:white" ;>{{event1}}</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <table ng-show="table_device_type" class="table " style="background: #292c2f;">
+                <thead>
+                <tr>
+                    <th style="color:white" ;>#</th>
+                    <th style="color:white" ;>Device Name</th>
+                    <th style="color:white" ;>Reading</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="event1 in historyt.readings">
+
+                    <td style="color:white" ;>{{historyt.readings.indexOf(event1)}}</td>
+                    <td style="color:white" ;>{{historyt.historyName[historyt.readings.indexOf(event1)]}}</td>
+                    <td style="color:white" ;>{{event1}}</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+            <table ng-show="table_user" class="table " style="background: #292c2f;">
+                <thead>
+                <tr>
+                    <th style="color:white" ;>#</th>
+                    <th style="color:white" ;>Date</th>
+                    <th style="color:white" ;>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="event1 in history.historyDate">
+
+                    <td style="color:white" ;>{{history.historyDate.indexOf(event1)}}</td>
+                    <td style="color:white" ;>{{event1}}</td>
+                    <td style="color:white" ;>{{history.historyDescription[history.historyDate.indexOf(event1)]}}</td>
+
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-distributed">
+
+    <div class="footer-right">
+
+        <a><i class="fa fa-facebook"></i></a>
+        <a><i class="fa fa-twitter"></i></a>
+        <a><i class="fa fa-linkedin"></i></a>
+        <a><i class="fa fa-github"></i></a>
+
+    </div>
+
+    <div class="footer-left">
+
+        <p class="footer-links">
+            <a>Integração de Sistemas - 2º Trabalho</a>
+            ·
+
+        </p>
+
+        <p>André Lourenço, Bruno Campos, Duarte Gonçalves &copy; 2017</p>
+    </div>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "monitoring_system_backend_api",
+  "version": "1.0.0",
+  "description": "Monitoring System Backend API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pedro Lima Monteiro",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.4.0",
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "https": "^1.0.0",
+    "jade": "^1.11.0",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.2",
+    "socket.io": "^1.7.3",
+    "thread": "0.0.2",
+    "threads": "^0.7.2"
+  }
+}

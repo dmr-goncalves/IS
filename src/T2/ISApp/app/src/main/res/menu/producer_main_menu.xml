@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+
+        <item
+            android:id="@+id/RegisterProdcutM"
+            android:icon="@drawable/ic_menu_add"
+            android:title="Register Device Model" />
+
+        <item
+            android:id="@+id/RemovePM"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Remove Device Model" />
+
+        <item
+            android:id="@+id/RegisterDeviceT"
+            android:icon="@drawable/ic_menu_add"
+            android:title="Register Device Type" />
+
+        <item
+            android:id="@+id/RemoveDT"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Remove Device Type" />
+
+
+        <item
+            android:id="@+id/checkGivenDeviceH"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Check Device History"/>
+
+        <item
+            android:id="@+id/checkGivenDeviceTypeH"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Check Device Type History"/>
+
+        <item
+            android:id="@+id/checkGivenUserH"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Check User History" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/Logoff"
+            android:icon="@drawable/logout"
+            android:title="Logoff" />
+    </group>
+
+</menu>

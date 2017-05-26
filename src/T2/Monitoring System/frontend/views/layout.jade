@@ -1,0 +1,35 @@
+doctype html
+html(class="no-js", lang="en", ng-app="#{angularApp}", style="background-color:#e6e6e6;")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{angularApp}
+
+        script(src="jsrc/modernizr.js")
+        script(src="jsrc/angular/angular.js")
+        script(src="jsrc/angular/angular-resource.min.js")
+        script(src="jsrc/angular/angular-route.js")
+        script(src="jsrc/#{angularApp}.js")
+        script(src="jsrc/controllers#{angularApp}.js")
+        script(src="/socket.io/socket.io.js")
+        script(src="jsrc/angular/socket.js")
+
+        script(src="//maps.googleapis.com/maps/api/js?key=AIzaSyBnk9LBPpVVt-lxSEVj8Uc6EHI2j-AVSHU&libraries=places")
+        link(rel="stylesheet", href="stylesheets/bootstrap.min.css")
+        link(rel="stylesheet", href="stylesheets/bootstrap-theme.min.css")
+        link(rel="stylesheet", href="stylesheets/style.css")
+        link(rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css")
+        link(href="https://fonts.googleapis.com/css?family=Lily+Script+One" rel="stylesheet")
+
+    body
+
+
+
+        block content
+        script(src="js/jquery.js")
+        script(src="js/bootstrap.min.js")
+
+     //script(src="js/foundation.min.js")
+          //  script $(document).foundation();
+
+

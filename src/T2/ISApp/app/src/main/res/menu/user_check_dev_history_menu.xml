@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+
+        <item
+            android:id="@+id/checkDevH_RegisterDev"
+            android:icon="@drawable/ic_menu_add"
+            android:title="Register Device" />
+
+        <item
+            android:id="@+id/checkDevH_StopMon"
+            android:icon="@android:drawable/ic_media_pause"
+            android:title="Stop Monitoring Device" />
+
+        <item
+            android:id="@+id/StartMon"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="Start Monitoring Device" />
+
+        <item
+            android:id="@+id/UnregDev"
+            android:icon="@drawable/ic_media_stop"
+            android:title="Unregister Device" />
+
+        <item
+            android:id="@+id/removeDev"
+            android:icon="@android:drawable/ic_delete"
+            android:title="Remove Device"/>
+
+        <item
+            android:id="@+id/checkDevH_checkPersonalH"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="Check Personal History"/>
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item
+            android:id="@+id/checkDevH_Logoff"
+            android:icon="@drawable/logout"
+            android:title="Logoff" />
+    </group>
+
+</menu>

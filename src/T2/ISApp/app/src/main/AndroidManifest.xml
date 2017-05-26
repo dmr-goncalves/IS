@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dmrg.isapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".UserMainActivity" />
+        <activity android:name=".UserRegisterDeviceActivity" />
+        <activity android:name=".UserStopMonitoringActivity" />
+        <activity android:name=".UserUnregisterDevice" />
+        <activity android:name=".UserCheckDeviceHistory" />
+        <activity android:name=".UserCheckHistory" />
+        <activity android:name=".UserLogoutActivity" />
+        <activity android:name=".ProducerMainActivity" />
+        <activity android:name=".ProducerRegisterDeviceType" />
+        <activity android:name=".ProducerUnregisterDeviceType" />
+        <activity android:name=".ProducerRegisterDeviceModel" />
+        <activity android:name=".ProducerUnregisterDeviceModel" />
+        <activity android:name=".ProducerCheckGivenUserHistory" />
+        <activity android:name=".ProducerUserHistoryResult" />
+        <activity android:name=".ProducerLogoutActivity" />
+        <activity android:name=".UserStartMonitoringActivity" />
+        <activity android:name=".UserRemoveDeviceActivity" />
+        <activity android:name=".UserCheckDeviceHistoryResult"></activity>
+    </application>
+
+</manifest>
