@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
-    <system systemId="file:/C:/Users/Ricardo%20Peres/Desktop/IS_RPG_MAS/playerSchema.xsd" uri="xml-resources/jaxb/playerSchema/playerSchema.xsd"/>
-    <system systemId="file:/C:/Users/Ricardo%20Peres/Desktop/IS_RPG_MAS/characterSchema.xsd" uri="xml-resources/jaxb/CharacterXMLBinding/characterSchema.xsd"/>
-</catalog>
