@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://xml.netbeans.org/schema/characterSchema"
+           xmlns:tns="http://xml.netbeans.org/schema/characterSchema"
+           elementFormDefault="qualified">
+
+    <xsd:complexType name="tPositionAndOrientation">
+        <xsd:sequence>
+            <xsd:element name="longitude" type="xsd:int" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="latitude" type="xsd:int" maxOccurs="1" minOccurs="1"/>
+            <xsd:element name="orientation" type="xsd:int" maxOccurs="1" minOccurs="1"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="tCharacter">
+        <xsd:sequence>
+            <xsd:element name="name" type="xsd:string"/>
+            <xsd:element name="description" type="xsd:string"/>
+            <xsd:element name="healthPoints" type="xsd:int"/>
+            <xsd:element name="weaponDurability" type="xsd:int"/>
+            <xsd:element name="type" type="xsd:int"/>
+            <xsd:element name="status" type="xsd:int"/>
+            <xsd:element name="tracks" type="xsd:int"/>
+            <xsd:element name="previousPAndO" type="tns:tPositionAndOrientation"/>
+            <xsd:element name="currentPAndO" type="tns:tPositionAndOrientation"/>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:element name="myCharacter" type="tns:tCharacter"/>
+    
+</xs:schema>

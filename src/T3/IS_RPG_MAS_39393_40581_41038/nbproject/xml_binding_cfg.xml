@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<schemas xmlns='http://xml.netbeans.org/schema/JAXBWizConfig' destdir='build/generated-sources/jaxb' projectName='IS_RPG_MAS' version='1.0'>
+    <schema type='-xmlschema' package='' name='CharacterXMLBinding'>
+        <xjc-options>
+        </xjc-options>
+        <schema-sources>
+            <schema-source location='xml-resources/jaxb/CharacterXMLBinding/characterSchema.xsd' origLocation='characterSchema.xsd'/>
+        </schema-sources>
+        <bindings>
+        </bindings>
+        <catalog/>
+    </schema>
+</schemas>
